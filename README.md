@@ -25,12 +25,15 @@ Data Preprocessing:
 -Remove missing values
 -Clean lyrics (punctuation, casing)
 -Tokenize + Lemmatize + Remove stopwords
+
 TF-IDF Vectorization:
 -Each song lyric is transformed into a sparse vector
 -Limited to max_features=3000 for performance
+
 Genre Tagging:
 -KMeans clustering on TF-IDF vectors
 -Adds a genre_label column based on lyrical themes
+
 Song Recommendation:
 -Input a song title (and optional artist)
 -Finds similar songs based on lyric similarity
